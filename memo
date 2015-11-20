@@ -1,0 +1,14 @@
+.bash_profile
+export SQLPATH=~/scripts/oracle-showtool.git
+
+check
+SQL>!ls $SQLPATH
+
+exec
+SQL>@show_index TABLENAME
+SQL>@show_table_status TABLENAME
+SQL>@show_insert_table_cols TABLENAME
+SQL>@show_index_status INDEXNAME
+SQL>@show_create [TABLE | INDEX] [TABLENAME | INDEXNAME]
+SQL>@show_cols_status TABLENAME
+
